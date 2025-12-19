@@ -17,14 +17,17 @@ void uniqueNumber(int* arr , int n ){
    vector<int> vec ;
    cout<<"done";
 //    1,2,3,3,3,4,5;
+int index = 0 ;
     for(int i = 1 ; i < n ; ++i){
-        if(arr[i] != arr[i-1]){
-            vec.push_back(arr[i-1]);
+        if(arr[i] != arr[index]){
+            index++;
+            arr[index] = arr[i];
+            
         }
     }
-    vec.push_back(arr[n-1]);
-    for(int i = 0 ; i < vec.size() ; ++i){
-        cout<<vec[i];
+    
+    for(int i = 0 ; i <index  ; ++i){
+        cout<<arr[i];
        } 
 
 }
