@@ -10,7 +10,7 @@ int countSuffixMatches(vector<string>& w, string suff) {
         if(w[i].size() < suff.size()) continue;
         cout<<w[i]<<endl;
         cout<<w[i].size() <<"" <<suff.size()<<w[i].size() - suff.size();
-        if(w[i].compare(w[i].size() - suff.size() ,stuff.size()-1  , suff) == 0){
+        if(w[i].compare(w[i].size() - suff.size() ,suff.size()  , suff) == 0){
             count++;
         }
     }
