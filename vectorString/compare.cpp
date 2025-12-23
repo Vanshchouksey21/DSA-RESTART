@@ -21,9 +21,7 @@ int countSuffixMatches(vector<string>& w, string suff) {
 
 int main() {
     vector<string> words = {
-        "testing",
-        "ending",
-        "coding",
+ 
         "king",
         "ring",
         "test"
